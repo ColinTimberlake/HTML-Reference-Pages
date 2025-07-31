@@ -364,15 +364,126 @@
         is what is referred to as gutters. Should be able to allow readers to quickly understand what they should be focusing on and what is just supplementary details. </p>
       <h3>Margins</h3>
         <p>Margins are the sides of the page and the indentation into the page. This can be set up as a seperate column. This can be used as an active whitespace to direct the user's attention to the page.</p>
-      <!--Insert grid commands
-      grid-template-row
-      grid-template-column
-      grid-template
-      row-gap
-      column-gap
-      gap
-      grid-row-start, grid-row-end, grid-column-start, grid-column-end
-      grid-area
+      
+    
+    <table>
+        <caption>Grid</caption>
+        <thead>
+          <tr>
+            <th scope="col">Css Command</th>
+            <th scope="col">value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">display:grid</th>
+            <td>this is used to create grids for layout of website content</td>   
+          </tr>
+          <tr>
+            <th scope="row">display:inline-grid</th>
+            <td>used to create an inlinne grid</td>
+          </tr>
+          <tr>
+            <th scope="row">grid-template-columns</th>
+            <td>divides the grids up into columns 1 example: 1fr 1fr 1fr. This divides the content into three equal grid columns. set the width of the columns</td>
+          </tr>
+          <tr>
+            <th scope="row">grid-template-rows</th>
+            <td>divides the grid up into rows and sets the height of the rows.</td>   
+          </tr>
+          <tr>
+            <th scope="row">grid-template</th>
+            <td>combines the two commands to combine columns and rows in one line of code</td>
+          </tr>
+          <tr>
+            <th scope="row">repeat()</th>
+            <td>Used to clean up code, values are number of times and size of the column or row</td>
+          </tr>
+          <tr>
+            <th scope="row">minmax()</th>
+            <td>Minimum and maximum size of the containers no matter the size of browser</td>   
+          </tr>
+          <tr>
+            <th scope="row">column-gap</th>
+            <td>gaps between columns</td>
+          </tr>
+          <tr>
+            <th scope="row">row-gap</th>
+            <td>gaps between rows</td>
+          </tr>
+          <tr>
+            <th scope="row">gap</th>
+            <td>single command to combine row-gap and column-gap.</td>
+          </tr>
+          <!--multiple row and column commands-->
+          <tr>
+            <th scope="row">grid-row-start</th>
+            <td>where the grid row starts</td>
+          </tr>
+           <tr>
+            <th scope="row">grid-row-end</th>
+            <td>where the grid row ends. Note: it will go to the row before. so if you put 6 it will end in column 5</td>
+          </tr>
+           <tr>
+            <th scope="row">grid-column-start</th>
+            <td>where the grid column starts</td>
+          </tr>
+           <tr>
+            <th scope="row">grid-column-end</th>
+            <td>where the grid column ends. Note: content will end in the column before. same as rows </td>
+          </tr>         
+          <tr>
+            <th scope="row">grid-area</th>
+            <td>this is the single command for grid-row and grid column start and end set up as row-start/column-start/row-end/column-end</td>
+          </tr>
+          <tr>
+            <th scope="row">span ()</th>
+            <td>This can be used for the input value of grid-column-end and grid-row-end. This just shows how much the content will span as far as the sections.</td>
+          </tr>
+          <tr>
+            <th scope="row">grid-template-areas</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">justify-items</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">justify-content</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">justify-self</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">align-items</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">align-content</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">align-self</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">grid-auto-columns</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">grid-auto-rows</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">grid-auto-flow</th>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+    <!--Insert grid commands
     probably look better as a table. also need to add advanced commands when done with section
       advanced commands: 
     grid-template-areas: same as grid-area.
