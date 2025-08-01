@@ -364,7 +364,9 @@
         is what is referred to as gutters. Should be able to allow readers to quickly understand what they should be focusing on and what is just supplementary details. </p>
       <h3>Margins</h3>
         <p>Margins are the sides of the page and the indentation into the page. This can be set up as a seperate column. This can be used as an active whitespace to direct the user's attention to the page.</p>
-      
+      <h3>Overlap</h3>
+        <p>You want to use Grid-area when overlap happens. This will tell where the sections will overlap since you will define the rows and columns start and end.
+        You will combine this with the z-index. This will allow you to set which one will be printed on top of the other</p>
     
     <table>
         <caption>Grid</caption>
@@ -415,6 +417,7 @@
             <th scope="row">gap</th>
             <td>single command to combine row-gap and column-gap.</td>
           </tr>
+          
           <!--multiple row and column commands-->
           <tr>
             <th scope="row">grid-row-start</th>
@@ -440,45 +443,78 @@
             <th scope="row">span ()</th>
             <td>This can be used for the input value of grid-column-end and grid-row-end. This just shows how much the content will span as far as the sections.</td>
           </tr>
+
+          <!--Consider making this into either seperate table or seperate section kind of like the text area-->
           <tr>
             <th scope="row">grid-template-areas</th>
-            <td></td>
+            <td>Declares out the rows and columns for the grid sometimes before it is fully made. Gives them a name</td>
+          </tr>
+          <tr>
+            <th scope="row">grid-template-rows</th>
+            <td>Declares the height of each of the rows</td>
+          </tr>
+          <tr>
+            <th scope="row">grid-template-columns</th>
+            <td>Declares the width of the columns</td>
+          </tr>
+          <tr>
+            <th scope="row">grid-area</th>
+            <td>Names the sections of the code the same as the names declared in the grid-template-areas</td>
           </tr>
           <tr>
             <th scope="row">justify-items</th>
-            <td></td>
+            <td>positions grid items along the inline, or row axis. items from left to right.
+            accepts four value: start-left side of grid area, end grid items to right side, 
+            center: grid items to center of grid area, stretch: stretches items to fill grid area</td>
           </tr>
           <tr>
             <th scope="row">justify-content</th>
-            <td></td>
+            <td> position entire grid within its parent element. 
+            also accepts the same start, end, center, and stretch. 
+            Adds space-around, space-between, space-evenly </td>
           </tr>
           <tr>
             <th scope="row">justify-self</th>
-            <td></td>
+            <td>specifies how the individual element should position itself with respect to the row axis.
+            start, end, center, stretch</td>
           </tr>
           <tr>
             <th scope="row">align-items</th>
-            <td></td>
+            <td> positions items along the column or block axis.
+            Start: aligns grid-items to top
+            End: aligns grid-items to bottom
+            Center: center of grid-area
+            Stretch: stretches items to fill the grid area</td>
           </tr>
           <tr>
             <th scope="row">align-content</th>
-            <td></td>
+            <td>aligns rows along column axis or from top to bottom. start, end, center stretch all the same
+            space-around: equal amount of space on each side. double space between elements
+            space-between equal amount of space between grid-items and no space on ends.
+            space-evenly: equal amount of space between grid items and at either end</td>
           </tr>
           <tr>
             <th scope="row">align-self</th>
-            <td></td>
+            <td>specifies how individual element should position itself with respect to column axis
+            start, end, center, stretch</td>
           </tr>
+
+          <!--implicit grid vs Explicit grid-->
           <tr>
             <th scope="row">grid-auto-columns</th>
-            <td></td>
+            <td>used to define the width of implicitly added grid columns
+            pixels, percentages, fractions, and repeat function</td>
           </tr>
           <tr>
             <th scope="row">grid-auto-rows</th>
-            <td></td>
+            <td> used to define the height of implicitly added grid rows
+            pixels, percentages, fractions, and repeat function</td>
           </tr>
           <tr>
             <th scope="row">grid-auto-flow</th>
-            <td></td>
+            <td>specifies whether new elements should be added to rows or columns
+            values:row, column, dense:invokes algorithm that attemps to fill holes earlier in grid layout if smaller elements are added.
+            You can pair two of these values together</td>
           </tr>
         </tbody>
       </table>
@@ -486,16 +522,6 @@
     <!--Insert grid commands
     probably look better as a table. also need to add advanced commands when done with section
       advanced commands: 
-    grid-template-areas: same as grid-area.
-    justify items, justify content
-    items: specifies how individual elements should spread across row axis
-    content: how groups of elements spread across row axis
-    justify self: how a single element should position itself with respect to the row axis
-
-    align items: elements spread across column axis
-    align content groups of content spead across column axis
-    align self how a single element shoulkd spread across column axis
-
     grid auto rows: height of rows added implicity to the graph
     grid auto columns: width of columns added implicity to the graph
     grid auto flow: specifies in which direction implicit elements should be created
