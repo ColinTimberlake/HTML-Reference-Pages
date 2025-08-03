@@ -531,5 +531,97 @@
           the minimum and maximum width of elements can be set using min-width, and max-width. 
           The minimum and maximum height of elements can be set using min-height and max-height. 
           Auto can be used to scale images or videos proportionally. Background images will scale when background-size is set to cover.</p>
+     
+      <h2>Media Queries</h2>
+        <p>Responsive website occurs when a website responds to the size of the screen it's viewed on</p>
+        <h3>&lt;meta&gt;</h3>
+          <p> add this tag to code allows you to control the width and scaling of the viewport
+          so that it's sized and scaled correctly on all devices</p>
+        <h3>Media Features</h3>
+          <p>Media Features are conditions that must be met to render the css within a media query. These can detect many aspects of the user's browser,
+          including the screen width, height, resolution, orientation, and more.</p>
+    
+          <p>The 'and' operator  requires multiple media features to be true at once. A comma seperated list of media features only requires one to be true.</p>
+    <table>
+        <caption>Animation</caption>
+        <thead>
+          <tr>
+            <th scope="col">Css Command</th>
+            <th scope="col">value</th>
+            <th scope="col">Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">transition-property</th>
+            <td>Property we want to change</td>   
+            <td>transition-property:color</td>
+          </tr>
+          <tr>
+            <th scope="row">transition-duration</th>
+            <td>the duration of the transition</td>
+            <td>transition-duration:1s</td>
+          </tr>
+           <tr>
+            <th scope="row">transition-timing-function</th>
+            <td>Timing function describes the pace of the transition</td>
+            <td>default value is ease which slowly starts, speeds up in the middle and slows again at the end</td>
+          </tr>
+          <tr>
+            <th scope="row">transition-delay</th>
+            <td>specifies time to wait before starting the transition</td>
+            <td>time in ms or s</td>
+          </tr>
+          <tr>
+            <th scope="row">transition</th>
+            <td>shorthand for the other commands</td>
+            <td>specified in the following order: property, duration, timing-function, and delay</td>
+          </tr>
+          <tr>
+            <th scope="row">multiple transitions</th>
+            <td>to make multiple transitions with one command, use the transition shorthand and then put a comma between the transitions but before the semi-colon</td>
+            <td>default value is ease which slowly starts, speeds up in the middle and slows again at the end</td>
+          </tr>
+        </tbody>
+    </table>
+    <h2>Notes about timing function</h2>
+      <ul>
+        <li>ease-in: starts slow, accelerates quickly, stops abruptly</li>
+        <li>ease-out: begins abruptly, slows down, ends slowly</li>
+        <li>ease-in-out: starts slow, gets fast in the middle and ends slowly</li>
+        <li>linear: constant speed throughout</li>
+      </ul>
+    <h2>Notes about transitions:</h2>
+      <ul>
+        <li>Color Values will blend to a new color</li>
+        <li>length values will grow or shrink</li>
+        <li> Transition-property can be replaced with all which will apply the changes to all properties.</li>
+      </ul>
+
+
+
+    <table>
+        <caption>Transform</caption>
+        <thead>
+          <tr>
+            <th scope="col">Css Command</th>
+            <th scope="col">value</th>
+            <th scope="col">Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">transform-origin</th>
+            <td>Property we want to change</td>   
+            <td>transition-property:color</td>
+          </tr>
+          <tr>
+            <th scope="row">transform</th>
+            <td>the duration of the transition</td>
+            <td>transition-duration:1s</td>
+          </tr>
+         
+        </tbody>
+    </table>
   </body>
 </html>
