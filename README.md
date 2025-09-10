@@ -10,7 +10,6 @@ This project started as a learning exercise and has been refactored to improve r
 ## Features  
 - 🗂️ Displays categorized coding references in a clear, accessible format  
 - 🔍 Easy-to-navigate table layout for quick lookup  
-- 📱 Responsive design for desktop and mobile  
 - 🛠️ Clean, refactored codebase for readability and scalability  
 
 ---
@@ -49,10 +48,8 @@ Open `index.html` in your browser.
 
 ---
 
-## Future Enhancements  
-- Add search or filter functionality  
-- Expand content categories  
-- Convert into a small API-driven reference app  
+## Future Enhancements   
+- Expand content categories   
 
 ---
 
